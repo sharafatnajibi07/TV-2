@@ -3,13 +3,11 @@
 <head>
   <meta http-equiv="refresh" content="300">
   <title>Visitor Schedule</title>
-
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       color: #fff;
-
       background-image: url('https://citywideps.com/assets/backgrounds/desktopbg-xl3.png');
       background-size: cover;
       background-position: center;
@@ -17,69 +15,101 @@
     }
 
     .overlay {
-      background: rgba(0, 0, 0, 0.65);
+      background: rgba(0, 0, 0, 0.68);
       min-height: 100vh;
-      padding-bottom: 40px;
+      padding: 20px 0 40px 0;
+    }
+
+    .brand-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      margin-bottom: 20px;
+    }
+
+    .brand-left {
+      font-size: 34px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .brand-right {
+      font-size: 28px;
+      color: #dddddd;
     }
 
     h1 {
       text-align: center;
-      font-size: 100px;
+      font-size: 96px;
       margin: 10px 0;
+      letter-spacing: 2px;
     }
 
     .today {
       text-align: center;
-      font-size: 48px;
+      font-size: 46px;
       background: #ffeb3b;
       color: #000;
       padding: 14px;
       font-weight: bold;
       margin: 10px auto 30px auto;
-      width: 70%;
-      border-radius: 12px;
+      width: 72%;
+      border-radius: 14px;
+    }
+
+    .events-container {
+      width: 100%;
     }
 
     .event {
-      width: 85%;
-      margin: 25px auto;
+      width: 84%;
+      margin: 24px auto;
       padding: 30px 40px;
-      border-radius: 16px;
-      background: rgba(0,0,0,0.75);
+      border-radius: 18px;
+      background: rgba(0, 0, 0, 0.76);
+      border: 2px solid rgba(255,255,255,0.12);
     }
 
     .time {
-      font-size: 60px;
+      font-size: 56px;
       font-weight: bold;
     }
 
     .title {
-      font-size: 80px;
+      font-size: 76px;
       margin-top: 10px;
+      font-weight: 700;
+      line-height: 1.05;
     }
 
     .location {
-      font-size: 42px;
-      margin-top: 10px;
-      color: #ddd;
+      font-size: 38px;
+      margin-top: 12px;
+      color: #e0e0e0;
     }
 
     .notes {
-      font-size: 36px;
-      margin-top: 8px;
-      color: #bbb;
+      font-size: 32px;
+      margin-top: 10px;
+      color: #cfcfcf;
     }
 
     .empty {
       text-align: center;
       font-size: 60px;
       margin-top: 120px;
+      color: #fff;
     }
   </style>
 </head>
-
 <body>
   <div class="overlay">
+
+    <div class="brand-bar">
+      <div class="brand-left">CITYWIDE PROPERTY SERVICES</div>
+      <div class="brand-right">6:55 PM</div>
+    </div>
 
     <h1>Visitor Schedule</h1>
 
@@ -87,7 +117,9 @@
       TODAY - Thursday, April 23, 2026
     </div>
 
-    <div class="empty">No events scheduled today</div>
+    <div class="events-container">
+      <div class="empty">No events scheduled today</div>
+    </div>
 
   </div>
 </body>
