@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="300">
+  <meta http-equiv="refresh" content="60">
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Visitor Schedule</title>
   <style>
     body {
@@ -71,6 +74,12 @@
       border: 2px solid rgba(255,255,255,0.12);
     }
 
+    .current {
+      border: 4px solid #00e676;
+      box-shadow: 0 0 20px rgba(0, 230, 118, 0.7);
+      background: rgba(0, 80, 40, 0.82);
+    }
+
     .time {
       font-size: 56px;
       font-weight: bold;
@@ -108,7 +117,7 @@
 
     <div class="brand-bar">
       <div class="brand-left">CITYWIDE PROPERTY SERVICES</div>
-      <div class="brand-right">7:13 PM</div>
+      <div class="brand-right">12:18 PM PST</div>
     </div>
 
     <h1>Visitor Schedule</h1>
@@ -118,11 +127,12 @@
     </div>
 
     <div class="events-container">
-      <div class="event">
+      <div class="event current">
+
   <div class="time">
-    7:00 PM
+    12:00 PM
     -
-    7:30 PM
+    12:30 PM
   </div>
 
   <div class="title">
@@ -136,6 +146,7 @@
   <div class="notes">
     
   </div>
+
 </div>
     </div>
 
