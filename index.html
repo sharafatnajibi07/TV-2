@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Network Monitor</title>
+  <title>TV-2 Monitor</title>
   <meta http-equiv="refresh" content="120">
   <style>
-    body {
+    html, body {
       margin: 0;
+      width: 100%;
+      height: 100%;
       background: black;
       overflow: hidden;
     }
 
-    .container {
+    iframe {
       width: 100vw;
       height: 100vh;
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    iframe {
-      width: 140%;
-      height: 140%;
       border: none;
-      transform: scale(1.4);
-      transform-origin: center center;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <iframe src="https://monitor.ui.com/499428af-9949-43fa-9a40-7872563aff28"></iframe>
-  </div>
+  <iframe src="https://monitor.ui.com/499428af-9949-43fa-9a40-7872563aff28"></iframe>
 </body>
 </html>
